@@ -10,25 +10,46 @@ namespace LeetCodeCs
     {
         public bool ValidParentheses(string s)
         {
-            string[] closings = { "()", "[]", "{}" };
-            int cropIndex = 0;
-            for (int i = 0; i < s.Length; i++)
+            if (s.Length > 1)
             {
-                foreach (string item in closings)
+                string[] pairs = { "()", "[]", "{}" };
+                bool boolstatus = false;
+                int i = 0;
+                do
                 {
-                    if (s.Contains(item))
+                    foreach (string item in pairs)
                     {
-                        cropIndex = s.IndexOf(item, 0);
-                        s.Remove(cropIndex);
-                        s.Remove(cropIndex);
+                        if (s.Contains(item))
+                        {
+                            boolstatus = true;
+                            s = removeValid(s, item);
+                            i = 0;
+                        }
                     }
+                    i++;
+                } while (boolstatus == true && i < s.Length);
+
+                if (s.Length == 0)
+                {
+                    return true;
                 }
+                else return false;
             }
-            if (s.Length > 0)
-            {
-                return false;
+            else 
+            {  
+                return false; 
             }
-            else return true;
+        }
+
+        public string removeValid(string s, string item)
+        {
+            List<string> sList = new List<string>();
+            int cutIndex = 0;
+            cutIndex = s.IndexOf(item, 0);
+            sList = s.Select(c => c.ToString()).ToList();
+            sList.RemoveRange(cutIndex, 2);
+            s = String.Join("", sList);
+            return s;
         }
     }
 }

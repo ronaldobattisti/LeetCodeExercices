@@ -5,10 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D5C806ED-E0AC-4CCD-ABD5-B4F529C75386}|LeetCodeCs.csproj|c:\\users\\ronal\\desktop\\programming\\tests_leetcode\\cs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D5C806ED-E0AC-4CCD-ABD5-B4F529C75386}|LeetCodeCs.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5C806ED-E0AC-4CCD-ABD5-B4F529C75386}|LeetCodeCs.csproj|c:\\users\\ronal\\desktop\\programming\\tests_leetcode\\cs\\validparentheses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5C806ED-E0AC-4CCD-ABD5-B4F529C75386}|LeetCodeCs.csproj|solutionrelative:validparentheses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,25 +27,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T00:39:21.241Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ValidParentheses.cs",
-              "DocumentMoniker": "C:\\Users\\RONAL\\Desktop\\programming\\Tests_Leetcode\\Cs\\ValidParentheses.cs",
-              "RelativeDocumentMoniker": "ValidParentheses.cs",
-              "ToolTip": "C:\\Users\\RONAL\\Desktop\\programming\\Tests_Leetcode\\Cs\\ValidParentheses.cs",
-              "RelativeToolTip": "ValidParentheses.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T23:40:21.264Z",
               "EditorCaption": ""
             }
           ]
