@@ -66,5 +66,10 @@ internal static class Program
         mtsl.MergeTwoLists();*/
         #endregion
 
+        #region 26-Remove Duplicates From Sorted Array
+        /*Remove_Duplicates_From_Sorted_Array rdfsa = new Remove_Duplicates_From_Sorted_Array();
+        rdfsa.RemoveDuplicates(new int[] {0, 0, 1, 2, 2, 3, 3, 3, 4 });*/
+        #endregion
+
     }
 }
