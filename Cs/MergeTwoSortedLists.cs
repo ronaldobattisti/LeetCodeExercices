@@ -11,7 +11,7 @@ namespace LeetCodeCs
 {
     internal class MergeTwoSortedLists
     {
-        public ListNode MergeTwoLists(/*ListNode list1, ListNode list2*/)
+        public ListNode MergeTwoLists(ListNode list1, ListNode list2)
         {
             ListNode head = new ListNode(-1);
             ListNode toReturn = head;

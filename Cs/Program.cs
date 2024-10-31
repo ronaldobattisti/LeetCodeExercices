@@ -71,5 +71,23 @@ internal static class Program
         rdfsa.RemoveDuplicates(new int[] {0, 0, 1, 2, 2, 3, 3, 3, 4 });*/
         #endregion
 
+        #region 27-Remove Elements
+        //done right in the sit, but answer is in class
+        #endregion
+
+        #region 28-Find the Index of the First Occurence in a Srting
+        //done right in the sit, but answer is in class
+        #endregion
+
+        #region 35-Search Insert Position
+        //done right in the sit, but answer is in class
+        #endregion
+
+        #region 58- Length of Last Word
+        /*Length_Last_Word llw = new Length_Last_Word();
+        string s = "Teste ronaldo  ";
+        int a = llw.LengthOfLastWord(s);*/
+        #endregion
+
     }
 }
