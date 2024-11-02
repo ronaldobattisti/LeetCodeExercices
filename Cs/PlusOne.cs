@@ -12,31 +12,20 @@ namespace LeetCodeCs
     {
         public int[] PlusOne(int[] digits) 
         {
-            int number = 0;
-            int mult = digits.Length;
-            for (int i = 0; i < digits.Length; i++)
+            for (int i = digits.Length - 1; i >= 0; i--)
             {
-                number += Pow(digits[i], digits.Length-1-i);
-            }
-            number += 1;
-            int[] ret = new int[number.ToString().Length];
-            int nLen = number.ToString().Length;
-            for (int i = 0; i < number.ToString().Length; i++)
-            {
-                ret[i] = (int)Math.Floor(number / nLen);
-            }
-            return digits;
-        }
+                if (digits[i] < 9)
+                {
+                    digits[i]++;
+                    return digits;
+                }
 
-        public int Pow(int number, int pow)
-        {
-            for (int i = 1; i<= pow; i++)
-            {
-                number = number * 10;
+                digits[i] = 0;
             }
-            return number;
-        }
 
-        
+            int[] nDigits = new int[digits.Length + 1];
+            nDigits[0] = 1;
+            return nDigits;
+        }
     }
 }

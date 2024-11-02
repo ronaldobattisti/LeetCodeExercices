@@ -25,7 +25,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedWidth": 226,
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\RONAL\\Desktop\\programming\\Tests_Leetcode\\Cs\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAgwGMAAAAEAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAmwGEAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-31T22:06:00.754Z",
               "EditorCaption": ""
@@ -44,7 +44,7 @@
           ]
         },
         {
-          "DockedWidth": 400,
+          "DockedWidth": 374,
           "SelectedChildIndex": 2,
           "Children": [
             {
@@ -69,8 +69,7 @@
               "RelativeToolTip": "LengthLastWord.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAB4AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T22:16:49.119Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T22:16:49.119Z"
             },
             {
               "$type": "Document",
@@ -80,7 +79,7 @@
               "RelativeDocumentMoniker": "PlusOne.cs",
               "ToolTip": "C:\\Users\\RONAL\\Desktop\\programming\\Tests_Leetcode\\Cs\\PlusOne.cs",
               "RelativeToolTip": "PlusOne.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-02T01:51:55.438Z",
               "EditorCaption": ""
