@@ -1,4 +1,5 @@
 ﻿using LeetCodeCs;
+using System.Numerics;
 
 internal static class Program
 {
@@ -87,6 +88,13 @@ internal static class Program
         /*Length_Last_Word llw = new Length_Last_Word();
         string s = "Teste ronaldo  ";
         int a = llw.LengthOfLastWord(s);*/
+        #endregion
+
+        #region Plus One
+        Plus_One po = new Plus_One();
+        int[] plus1 = po.PlusOne(new int[] {4,3,2,1});
+        int[] plus2 = po.PlusOne(new int[] { 9, 9, 9, 9 });
+        int[] plus3 = po.PlusOne(new int[] { 1, 2, 3 });
         #endregion
 
     }
