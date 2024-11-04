@@ -90,13 +90,21 @@ internal static class Program
         int a = llw.LengthOfLastWord(s);*/
         #endregion
 
-        #region Plus One
+        #region 66-Plus One
         /*Plus_One po = new Plus_One();
         int[] plus1 = po.PlusOne(new int[] {4,3,2,1});
         int[] plus2 = po.PlusOne(new int[] { 9, 9, 9, 9 });
         int[] plus3 = po.PlusOne(new int[] { 1, 2, 3 });
         int[] plus4 = po.PlusOne(new int[] { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 });*/
         #endregion
+
+        #region 67-Add Binary
+        string result = "";
+        Add_Binary ab = new Add_Binary();
+        //result = ab.AddBinary("111111", "1");
+        result = ab.AddBinary("1010", "1011");
+        #endregion
+
 
     }
 }
