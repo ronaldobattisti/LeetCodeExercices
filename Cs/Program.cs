@@ -102,7 +102,7 @@ internal static class Program
         string result = "";
         Add_Binary ab = new Add_Binary();
         //result = ab.AddBinary("111111", "1");
-        result = ab.AddBinary("1010", "1011");
+        result = ab.AddBinary("10100000", "1011");
         #endregion
 
 

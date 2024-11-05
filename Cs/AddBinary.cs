@@ -10,41 +10,73 @@ namespace LeetCodeCs
     {
         public string AddBinary(string a, string b)
         {
-            int aInt = BinaryToInt(a);
-            int bInt = BinaryToInt(b);
-            int sum = aInt + bInt;
-            string resultInv = "";
-            string result = "";
+            string sL = "";
+            string sB = "";
+            string zeros = "";
+            string strSum = "";
+            int intSum = 0;
+            int size = 0;
+            bool rest = false;
+            if (a.Length >= b.Length)
+            {
+                size = a.Length;
+                sB = a;
+                sL = b;
 
-            while (sum > 0)
-            {
-                resultInv += char.Parse((sum % 2).ToString());
-                sum = sum / 2;
             }
-            for (int i = resultInv.Length - 1; i >= 0; i--)
+            else
             {
-                result += resultInv[i];
+                size = b.Length;
+                sB = b;
+                sL = a;
             }
-            if (result != "")
+            while (sL.Length + zeros.Length < sB.Length)
             {
-                return result;
+                zeros += '0';
             }
-            else return "0";
-        }
+            sL = zeros + sL;
 
-        public int BinaryToInt(string bin)
-        {
-            int result = 0;
-            int target = bin.Length - 1;
-            int pow = 0;
-            int mult = 0;
-            for (int i = target; i >= 0; i--)
+            for (int i = sL.Length - 1; i>= 0; i--)
             {
-                pow = target - i;
-                mult = int.Parse(bin[i].ToString());
-                result += (int)Math.Pow((double)2, pow) * mult;
+                intSum = int.Parse(sL[i].ToString()) + int.Parse(sB[i].ToString());
+                if (intSum == 0 && rest == false)
+                {
+                    strSum += '0';
+                } else if (intSum == 0 && rest == true)
+                {
+                    strSum += "1";
+                    rest = false;
+                } else if (intSum == 1 && rest == false)
+                {
+                    strSum += '1';
+                } else if (intSum == 1 && rest == true)
+                {
+                    strSum += '0';
+                    rest = true;
+                }
+                else if (intSum > 1 && rest == false)
+                {
+                    strSum += '0';
+                    rest = true;
+                }
+                else if (intSum > 1 && rest == true)
+                {
+                    strSum += '1';
+                    rest = true;
+                }
             }
-            return result;
+            if (rest == true)
+            {
+                strSum += '1';
+            }
+            string resultInverted = "";
+            for (int i = strSum.Length - 1; i>=0; i--)
+            {
+                resultInverted += strSum[i];
+            }
+
+            return resultInverted;
+
+            }
         }
-    }
 }
