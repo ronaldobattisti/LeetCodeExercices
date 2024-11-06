@@ -99,12 +99,24 @@ internal static class Program
         #endregion
 
         #region 67-Add Binary
-        string result = "";
+        /*string result = "";
         Add_Binary ab = new Add_Binary();
         //result = ab.AddBinary("111111", "1");
-        result = ab.AddBinary("10100000", "1011");
+        result = ab.AddBinary("10100000", "1011");*/
         #endregion
 
+        #region 69-Sqrt(x)
+        //Done right at the site, anser is in the explorer
+        #endregion
+
+        #region 70-Climbing Stairs (uncomplete)
+        Climbing_Stairs cs = new Climbing_Stairs();
+        int ans = cs.ClimbStairs(7);
+        #endregion
+
+        #region 2914-Minimum Number of Changes to Make Binary String Beautiful
+        //Done right at the site, anser is in the explorer
+        #endregion
 
     }
 }
