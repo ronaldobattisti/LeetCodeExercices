@@ -10,23 +10,28 @@ namespace LeetCodeCs
     {
         public int ClimbStairs(int n)
         {
-            int result = 4;
-            int before = 3;
-            if (n <= 3)
+            int m2 = 0;
+            int m1 = 0;
+            int ans = 0;
+            for (int i = 1; i <= n; i++)
             {
-                return n;
+                if (i == 1)
+                {
+                    ans = 1;
+                }
+                else if (i == 2)
+                {
+                    m1 = ans;
+                    ans = 2;
+                }
+                else
+                {
+                    m2 = m1;
+                    m1 = ans;
+                    ans = m1 + m2;
+                }
             }
-            else if (n == 4)
-            {
-                return 5;
-            }
-            for (int i = 5; i > n; i++)
-            {
-
-                result = result + i + before;
-                //result += i-1;
-            }
-            return before;
+            return ans;
         }
     }
 }
